@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1</title>
+</head>
+<body>
+<h1 style="text-align: center;" >HTML < form > ELEMENTS</h1>
+<hr>
+    <form action="">  
+    <p>1. < input > = This creates a text field where users can type their username.</p>
+    <h4>Example:</h4>
+    <input type="text" id="name" name="name" placeholder=" Your Name"> 
+    <hr>
+
+    <p>2. < label > = This creates a label for an input field.</p>
+    <h4>Example:</h4>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder=" Your Name">
+
+    <hr>
+
+    <p>3. < select > = This creates a dropdown menu.</p>
+    <h4>Example:</h4>
+    <select name="age" id="age">
+        <option value="">Select Age</option>
+        <option value="18">18</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+    </select>
+
+    <hr>
+
+    <p>4. < textarea > = This creates a multi-line text input field.</p>
+    <h4>Example:</h4>
+    <textarea name="message" id="message" rows="4" cols="50"></textarea>
+
+    <hr>
+
+    <p>5. < button > = This creates a clickable button.</p>
+    <h4>Example:</h4>
+    <button type="button">Click Me!</button>
+
+    <hr>
+
+    <p>6/7. < fieldset > and < legend > = These elements group related form controls together and provide a caption for the group.</p>
+    <h4>Example:</h4>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        <br><br>
+        <label for="age">Age:</label>
+        <select name="age" id="age">
+            <option value="">Select Age</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+        </select>
+    </fieldset>
+
+    <hr>
+
+    <p>8. < datalist > = This creates a dropdown list with predefined options that users can select from.</p>
+    <h4>Example:</h4>
+    <input list="animals" name="animal">
+    <datalist id="animals">
+        <option value="Cat">
+        <option value="Dog">
+        <option value="Bird">
+        <option value="Fish">
+    </datalist>
+
+    <hr>
+
+    <p>9. < output > = This element is used to display the result of a calculation or other output.</p>
+    <h4>Example:</h4>
+   <output name="result1"> This is the result of the output </output>
+
+   <hr>
+
+   <p>10. < option > = This element is used to define an option in a dropdown list or a list of options in a datalist.</p>
+    <h4>Example:</h4>   
+    <select name="fruits" id="fruits">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="cherry">Cherry</option>
+    </select>
+
+    <hr>
+
+    <p>11. < optgroup > = This element is used to group related options in a dropdown list.</p>
+    <h4>Example:</h4>
+    <select name="animals" id="animals">
+        <optgroup label="Land Animals">
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+        </optgroup>
+        <optgroup label="Water Animals">
+            <option value="dolphin">Dolphin</option>
+            <option value="shark">Shark</option>
+        </optgroup>
+    </select>
+
+    <hr>
+
+    <h1 style="text-align: center;">HTML < input > TYPES</h1>
+<hr>
+
+<form action="">
+
+  <p>1. < input type="button" > - Creates a clickable button.</p>
+  <input type="button" value="Click Me!"><br><br>
+
+  <p>2. < input type="checkbox" > - Creates a checkbox for multiple selections.</p>
+  <input type="checkbox" id="check1" name="check1" value="option1">
+  <label for="check1">Option 1</label><br><br>
+  <input type="checkbox" id="check2" name="check2" value="option2">
+  <label for="check2">Option 2</label><br><br>
+
+  <p>3. < input type="color" > - Lets the user pick a color.</p>
+  <input type="color" name="favcolor" value="#ff0000"><br><br>
+
+  <p>4. < input type="date" > - Lets the user select a date.</p>
+  <input type="date" name="birthday"><br><br>
+
+  <p>5. < input type="datetime-local" > - Lets the user select date and time.</p>
+  <input type="datetime-local" name="appointment"><br><br>
+
+  <p>6. < input type="email" > - For entering an email address.</p>
+  <input type="email" name="email" placeholder="example@mail.com"><br><br>
+
+  <p>7. < input type="file" > - Lets the user upload a file.</p>
+  <input type="file" name="fileupload"><br><br>
+
+  <p>8. < input type="hidden" > - Holds hidden data (not visible).</p>
+  <input type="hidden" name="userid" value="98676"><br>
+
+  <p>9. < input type="image" > - Image used as a submit button.</p>
+  <input type="image" src="https://Image.com/100x50" width="100" height="50"><br><br>
+
+  <p>10. < input type="month" > - Lets user select month and year.</p>
+  <input type="month" name="month"><br><br>
+
+  <p>11. < input type="number" > - For entering numbers.</p>
+  <input type="number" name="quantity" min="1" max="10" value="1"><br><br>
+
+  <p>12. < input type="password" > - For entering passwords (hidden text).</p>
+  <input type="password" name="password" placeholder="Enter password"><br><br>
+
+  <p>13. < input type="radio" > - For selecting one option only.</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+
+  <p>14. < input type="range" > - Slider to select a value.</p>
+  <input type="range" name="volume" min="0" max="100" value="50"><br><br>
+
+  <p>15. < input type="reset" > - Resets the form fields.</p>
+  <input type="reset" value="Reset Form"><br><br>
+
+  <p>16. < input type="search" > - Search input field.</p>
+  <input type="search" name="search" placeholder="Search..."><br><br>
+
+  <p>17. < input type="submit" > - Submits the form.</p>
+  <input type="submit" value="Submit Form"><br><br>
+
+  <p>18. < input type="tel" > - For entering telephone numbers.</p>
+  <input type="tel" name="phone" placeholder="0992-702-3201"><br><br>
+
+  <p>19. < input type="text" > - Simple text input.</p>
+  <input type="text" name="username" placeholder="Enter username"><br><br>
+
+  <p>20. < input type="time" > - For selecting a time.</p>
+  <input type="time" name="appt-time"><br><br>
+
+  <p>21. < input type="url" > - For entering website URLs.</p>
+  <input type="url" name="website" placeholder="https://example.com"><br><br>
+
+  <p>22. < input type="week" > - Select week and year.</p>
+  <input type="week" name="weekyear"><br><br>
+
+</form>
+    
+</body>
+</html>

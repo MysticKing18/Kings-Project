@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f7f7f7;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        fieldset {
+            margin-top: 15px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>HTML &lt;form&gt; Elements Example</h2>
+
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+
+    <!-- label + input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <!-- textarea -->
+    <label for="message">Message:</label>
+    <textarea id="message" rows="4" placeholder="Type your message"></textarea>
+
+    <!-- select + option + optgroup -->
+    <label for="course">Select Course:</label>
+    <select id="course">
+        <optgroup label="Programming">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+        </optgroup>
+        <optgroup label="Database">
+            <option>MySQL</option>
+            <option>MongoDB</option>
+        </optgroup>
+    </select>
+
+    <!-- datalist -->
+    <label for="browser">Choose a Browser:</label>
+    <input list="browsers" id="browser">
+    <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Edge">
+        <option value="Safari">
+    </datalist>
+
+    <!-- fieldset + legend -->
+    <fieldset>
+        <legend>Personal Info</legend>
+        <label for="age">Age:</label>
+        <input type="number" id="age">
+    </fieldset>
+
+    <!-- output -->
+    <label>Sum (using output):</label>
+    <input type="number" id="a" value="10"> +
+    <input type="number" id="b" value="20">
+    = <output name="result"></output>
+
+    <!-- button -->
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

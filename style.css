@@ -1,0 +1,71 @@
+body{
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+    
+}
+h2{
+    color: orange;
+    text-align: center;
+    font-size: 30px;
+    font-family: "consolas", sans-serif;
+}
+h1{
+    color: brown;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Bitcount Single","consolas", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: cyan  underline;
+}
+p{
+    color: blanchedalmond;
+    font-size: 20px;
+    
+}
+#p1{
+    
+    color:  burlywood;
+    background-color: none;
+    font-family: "consolas", sans-serif;
+    border-style: solid;
+    border-width: 5px;
+    border-color: gray;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+#p2{
+    color: red;
+    background-color: lightblue;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-left-style: double;
+    border-right-style: double;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-left-color: rebeccapurple;
+}
+#p3{
+    color: blue;
+    background-color: lightgreen;
+}
+
+.a{
+    color: whitesmoke;
+    background-color: lightslategray;
+}
+.b{
+    color: purple;
+    background-color: lightslategrey;
+}
+pre{
+    color: yellow;
+    background-color: darkblue;
+    font-family: "consolas", sans-serif;
+    font-size: 18px;
+    border: 3px dotted orange;
+    padding: 10px;
+    margin: 15px;
+}
